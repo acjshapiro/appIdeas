@@ -1,0 +1,7 @@
+GET    /apps          #index   get all
+POST   /apps          #create  add a record
+GET    /apps/:id      #show    get 1 record
+PUT    /apps/:id      #update  update 1 record
+GET    /apps/new      #new     get the new form
+GET    /apps/:id/edit #edit    get the edit form
+DELETE /apps/:id      #destroy remove record

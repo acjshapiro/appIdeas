@@ -1,0 +1,23 @@
+<!-- this file must be named "layout.something"  in this case erb -->
+<!-- THIS WILL BE THE LAYOUT THAT THE OTHER PAGES INHERIT THE STRUCTURE FROM.   -->
+<!-- ALLOWS US TO ONLY WRITE THIS ONCE.  -->
+
+<html>
+  <head>
+    <title>App Ideas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <%= erb :navbar %>
+    <div class="container">
+      <%= yield %>   <!--The view we're in will inject the corresponding html here-->
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./public/main.js"></script>
+  </body>
+</html>
